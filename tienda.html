@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda | Laminados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <h1>Laminados Nacionales</h1>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="tienda.html">Tienda</a></li>
+  </ul>
+</nav>
+
+<main class="tienda">
+
+  <section class="productos">
+    <div class="producto">
+      <h3>Roble Europeo</h3>
+      <p>$320 MXN / m²</p>
+      <p>2.2 m² por caja</p>
+      <input type="number" min="1" id="m2-roble" placeholder="m² requeridos">
+      <button onclick="agregarCarrito('Roble Europeo',320,2.2,'m2-roble')">
+        Agregar
+      </button>
+    </div>
+
+    <div class="producto">
+      <h3>Nogal Oscuro</h3>
+      <p>$350 MXN / m²</p>
+      <p>2.5 m² por caja</p>
+      <input type="number" min="1" id="m2-nogal" placeholder="m² requeridos">
+      <button onclick="agregarCarrito('Nogal Oscuro',350,2.5,'m2-nogal')">
+        Agregar
+      </button>
+    </div>
+  </section>
+
+  <aside class="carrito">
+    <h2>🛒 Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <h3>Total: $<span id="total">0</span></h3>
+    <button class="checkout">Pago seguro (Demo)</button>
+  </aside>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
